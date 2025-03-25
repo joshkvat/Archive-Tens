@@ -1,0 +1,52 @@
+body {
+    background-color: #B5CDE2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+}
+
+button {
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+img {
+    display: flex;
+    max-width: 300px;
+}
+
+#datepicker {
+    background-color: #B5CDE2;
+    border: min(2.5px, 1vw) solid #000000;
+    border-radius: 50px;
+    color: #000000;
+    font-size: (10px, 30px);
+    font-weight: 700;
+    padding: 8px min(15vw, 40px);
+    text-align: center;
+}
+
+#button { 
+    background-color: #223c3c;
+    border: min(2.5px, 1vw) solid #b5cde2;
+    border-radius: 50px;
+    box-shadow: 0 0 0 min(2.5px, 1vw) #223c3c;
+    color: #fff;
+    font-size: (10px, 30px);
+    font-weight: 700;
+    padding: 8px min(15vw, 40px);
+    text-align: center;
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+}
