@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archive Tens</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
+    <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+    <script src="./script.js"></script>
+    <script src="moment.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="mainContainer">
+        <img src="ArchiveTens.png"/>
+        <h1>Input Your Date:</h1>
+    
+        <div class="inputContainer">
+            <input type="text" id="datepicker" placeholder="">
+            <script>
+                var picker = new Pikaday({
+                    field: document.getElementById('datepicker'),
+                    minDate: new Date(2024, 4, 7),
+                    maxDate: new Date(moment().year(), moment().month(), moment().date()),
+                    onSelect: function(date) {
+                        let Date = moment(date)
+                        let dateInput = document.getElementById("input");
+                        Date.format('YYYY-MM-DD');
+                        
+                    },
+                }); 
+            </script>
+            <button id="button">Take me there!</button>
+        </div>
+    </div>
+</body>
+</html>
